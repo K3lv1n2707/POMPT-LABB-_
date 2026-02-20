@@ -25,6 +25,8 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 body {
@@ -32,6 +34,8 @@ body {
     color: var(--text-primary);
     font-family: var(--font-main);
     overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
     /* Main background gradient only */
     background: radial-gradient(circle at 50% 0%, #111111 0%, #050505 80%);
     position: relative;
@@ -753,6 +757,11 @@ section {
 }
 
 .loader-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     text-align: center;
     position: relative;
     z-index: 2;
